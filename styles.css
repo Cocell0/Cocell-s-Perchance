@@ -373,6 +373,7 @@
   * {
     transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap;
     transition-duration: 0.5s;
+    box-sizing: content-box;
   }
 
   *:focus {
