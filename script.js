@@ -519,3 +519,5 @@ function truncateText(text, maxLength) {
     }
     return words.slice(0, maxLength).join(' ');
 }
+
+
