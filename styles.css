@@ -1107,7 +1107,7 @@
     background: var(--dark-gray-accent-mono);
   }
 
-  input {
+  input, select {
     padding: 5px;
     border-radius: 0.5rem;
     border: none;
@@ -1116,7 +1116,7 @@
     color: inherit;
   }
 
-  .dark input {
+  .dark input, select {
     background: var(--zen-dark-front);
     color: inherit;
   }
@@ -1308,13 +1308,13 @@
 
   @media (max-width: 800px) {
     .zen-title h1 {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
 
   @media (max-width: 300px) {
     .zen-title h1 {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
   }
 
