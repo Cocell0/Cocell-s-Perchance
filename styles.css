@@ -1116,7 +1116,7 @@
     color: inherit;
   }
 
-  .dark input, select {
+  .dark input, .dark select {
     background: var(--zen-dark-front);
     color: inherit;
   }
