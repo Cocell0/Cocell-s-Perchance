@@ -871,7 +871,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ccc;
+    background: var(--ruby-red);
     border-radius: 28px;
     transition: background 0.4s cubic-bezier(1, -1.25, 0, 2);
   }
