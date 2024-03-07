@@ -1112,6 +1112,10 @@ button {
   color: inherit;
 }
 
+button:focus-visible {
+  outline: auto ;
+}
+
 button:active {
   background: var(--light-gray-accent-mono);
 }
