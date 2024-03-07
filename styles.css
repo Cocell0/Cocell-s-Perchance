@@ -1058,6 +1058,10 @@ input:checked + .slider:before {
   background: var(--zen-front);
 }
 
+.dark .zen-front {
+  background: var(--zen-dark-front);
+}
+
 .zen-front-con {
   background: var(--zen-blue-con);
 }
