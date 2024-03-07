@@ -1,1327 +1,1359 @@
-  :root {
-    --font-color-black: #374151;
-    --font-color-white: #e6e8ec;
-    /* Background Type Colors */
-    --ct-bg: #ced4e595;
-    --ct-bg-alt: #dbe2ffc5;
-    --backdrop-light: #00000090;
-    --backdrop-dark: #000000cc;
-    /* Gradient Type Colors */
-    --ct-bg-dark: linear-gradient(160deg, #1d1d1d, #18181a, #141420);
-    --ct-bg-dark-alt: linear-gradient(160deg, #505053, #2d2d31, #0e0e1a);
-    /* Accent Type Colors */
-    --light-gray-accent: #cdd1d3;
-    --light-gray-accent-mono: #aeb5b9;
-    --dark-gray-accent: #3C4347;
-    --dark-gray-accent-mono: #535D63;
-    /* ***Colors*** */
-    /* White */
-    --whispering-white: #F8F8FF;
-    --vanilla-velour: #FDF5E6;
-    --pearlescent-purity: #FFF8E7;
-    --ivory-illusion: #f7fff0;
-    --ecru-elegance: #dcedf5;
-    --cream-chiffon: #fdf5e5;
-    --alabaster-ambiance: #F0F8FF;
-    --marshmallow-mist: #F5FFFA;
-    --subtle-snowfall: #F0FFFF;
-    --silken-snow: #DFF0E2;
-    --creamy-cotton: #FFFDD0;
-    --pale-purity: #E6F0FF;
-    --antique-aura: #FAEBD7;
-    --porcelain-pearl: #F4F0E5;
-    --frosted-flurry: #E1E8EB;
-    --linen-lustre: #FAF0E6;
-    --whitewash-whirl: #EDEDED;
-    --blizzard-breeze: #F9F9F9;
-    --glacial-glow: #F0F0F0;
-    --powdered-precipitation: #EAEAEA;
-    --crystal-clear: #E3E3E3;
-    --ice-ivory: #F1F1F1;
-    --cloud-comfort: #F2F2F2;
-    --silver-snowflake: #DCDCDC;
-    --faint-frosting: #F5F5F5;
-    --gentle-glow: #F8F8F8;
-    --soft-snow: #FFFAFA;
-    --airy-alabaster: #F7F7F7;
-    --whitened-whirlwind: #FDFDFD;
-    --pure-peace: #FCFCFC;
-    --arctic-ash: #F2F4F6;
-    /* Gray */
-    --charcoal-gray: #36454F;
-    --dark-gray: #383737;
-    --slate-gray: #708090;
-    --steel-gray: #4682B4;
-    --dark-steel: #3c444b;
-    --smoke-gray: #696969;
-    --ash-gray: #b8bec7;
-    --cloudy-gray: #d4d9e0;
-    --silver-steel: #C0C0C0;
-    --cool-platinum: #E5E4E2;
-    --warm-platinum: #C0C0C0;
-    --soft-gray: #d1d1d1;
-    --pale-silver: #C0C0C0;
-    --battleship-gray: #848482;
-    --mouse-gray: #8B8682;
-    --dove-gray: #525151;
-    --concrete-gray: #D2D1CD;
-    --rain-cloud-gray: #A9A9A9;
-    --stormy-gray: #778899;
-    --foggy-gray: #D6D6D6;
-    --pearl-gray: #eaeaea;
-    --moonstone-gray: #AAB2B5;
-    --pebble-gray: #D9D9D9;
-    --granite-gray: #676767;
-    --silver-lining: #C0C0C0;
-    --whale-gray: #7C8388;
-    --warm-gray: #808080;
-    --cool-gray: #B0C4DE;
-    --blue-gray: #6699CC;
-    --taupe-gray: #483C32;
-    --muted-gray: #9E9E9E;
-    /* *** */
-    --light-gray: #e3e3e3;
-    --light-lighter-gray: #f0f0f0;
-    --gray-50: #f7f7f8;
-    --gray-100: #ececf1;
-    --gray-200: #d9d9e3;
-    --gray-300: #c5c5d2;
-    --gray-400: #acacbe;
-    --gray-500: #999;
-    --gray-600: #666;
-    --gray-700: #40414f;
-    --gray-800: #343541;
-    --gray-900: #202123;
-    --gray-950: #0f0f0f;
-    /* Blue */
-    --arctic-blue: #f0f4f9;
-    --pale-ice: #dce5ee;
-    --sky-blizzard: #c8e0f6;
-    --frozen-wave: #9cc8e6;
-    --winter-chill: #bed8e8;
-    --cerulean-ice: #c3e0e8;
-    --arctic-dream: #d6e9f5;
-    --misty-frost: #d0e6f6;
-    --sapphire-breeze: #a5bfdd;
-    --tranquil-tide: #aecfd9;
-    --azure-breeze: #bcdce7;
-    --blue-haze: #bccfd9;
-    --oceanic-whisper: #c4d8e5;
-    --ethereal-blue: #c3d9ea;
-    --moonlit-marine: #8fb2cd;
-    --dreamy-blue: #95bedb;
-    --gentle-tide: #9abce2;
-    --calm-cerulean: #a7cde9;
-    --tranquil-lagoon: #97bed2;
-    --flawed-blue: #22426d;
-    --flawn-blue: #284c7c;
-    --flowing-blue: #264aad;
-    --zenithal-horizon: #88a3b8;
-    --velvet-sea: #6e99b3;
-    --arctic-zen: #7b9db9;
-    --ten-blue: #78adfd;
-    --blue: #a1c0f0;
-    --blue-light: #b8d3fc;
-    --blue-lighter: #cbe0ff;
-    --blue-100: #80aaff;
-    --blue-200: #6699ff;
-    --blue-300: #4d88ff;
-    --blue-400: #3366ff;
-    --blue-500: #1a45ff;
-    --blue-600: #0033cc;
-    --blue-800: #002266;
-    --blue-950: #000f66;
-    /* Red */
-    --crimson-red: #dc143c;
-    --ruby-red: #e74c3c;
-    --scarlet-fire: #ff2400;
-    --deep-cherry: #c0392b;
-    --vibrant-rose: #ff007f;
-    --burgundy-blush: #800020;
-    --cherry-blossom: #de3163;
-    --fiery-red: #b22222;
-    --passionate-pink: #ff4d6d;
-    --raspberry-ripple: #ff3883;
-    --tomato-tango: #ff6347;
-    --flamingo-feather: #fc8c99;
-    --coral-crush: #f88379;
-    --rose-petal: #ff66b2;
-    --candy-apple: #ff0800;
-    --rustic-red: #b7410e;
-    --velvet-vivid: #b91d47;
-    --marsala-magic: #964f4c;
-    --warm-embers: #ad1f21;
-    --chili-pepper: #9b1b30;
-    --crimson-glory: #be0032;
-    --merlot-mist: #7e354d;
-    --vivid-rouge: #a94064;
-    --bittersweet-blaze: #fe6f5e;
-    --mulberry-madness: #c85086;
-    --radiant-raspberry: #c71585;
-    --passion-punch: #ff5588;
-    --rosewood-rhapsody: #65000b;
-    --chocolate-cherry: #700137;
-    --red-50: #ffe6e6;
-    --red-100: #ff6666;
-    --red-200: #ff4d4d;
-    --red-300: #ff3333;
-    --red-400: #ff1a1a;
-    --red-500: #ff0000;
-    --red-600: #cc0000;
-    --red-700: #990000;
-    --red-800: #660000;
-    --red-900: #330000;
-    --red-950: #660f0f;
-    /* Orange */
-    --tangerine-tango: #ff7f50;
-    --pumpkin-spice: #ff7518;
-    --vivid-carrot: #ffA500;
-    --mango-madness: #ff8c1a;
-    --sunrise-orange: #ff6700;
-    --fiery-coral: #ff6f61;
-    --sunset-blaze: #fd5e53;
-    --burnt-sienna: #e97451;
-    --spiced-ginger: #b5651d;
-    --clementine-crush: #ff8000;
-    --orange-zest: #ffae42;
-    --amber-awakening: #ffbf00;
-    --goldenrod-glitter: #db9d00;
-    --marigold-magic: #ffcc00;
-    --honey-harvest: #ffdb58;
-    --autumn-blaze: #d99058;
-    --papaya-whip: #ffefd5;
-    --peach-parfait: #ffcc99;
-    --coral-cream: #ffaa80;
-    --salmon-splash: #ff8c69;
-    --apricot-ambiance: #fdd5b1;
-    --terra-cotta: #e2725b;
-    --cinnamon-spice: #d2691e;
-    --burnt-orange: #cc5500;
-    --rustic-rose: #bc6c25;
-    --copper-canyon: #7e3a12;
-    --sienna-sunrise: #c88a65;
-    --tawny-tan: #cd853f;
-    --nutmeg-nuance: #8a6e5a;
-    --spicy-brown: #ab5236;
-    --orange-light: #ffcc99;
-    --orange-lighter: #ffd9b3;
-    --orange-50: #ffe6cc;
-    --orange-100: #ffaa80;
-    --orange-200: #ff9966;
-    --orange-300: #ff884d;
-    --orange-400: #ff6633;
-    --orange-500: #ff5500;
-    --orange-600: #cc4400;
-    --orange-700: #993300;
-    --orange-800: #662200;
-    --orange-900: #331100;
-    --orange-950: #663f00;
-    /* Purple */
-    --lavender-blush: #F4E1FF;
-    --lilac-love: #B799D6;
-    --amethyst-dream: #9966CC;
-    --plum-perfection: #8E44AD;
-    --violet-velvet: #9400D3;
-    --purple-passion: #800080;
-    --royal-regalia: #6A1B9A;
-    --majestic-mauve: #9B59B6;
-    --mystic-mulberry: #C39BD3;
-    --orchid-opulence: #7D3C98;
-    --deep-purple: #5B2C6F;
-    --indigo-illusion: #4B0082;
-    --blue-violet: #8A2BE2;
-    --periwinkle-princess: #9FA8DA;
-    --twilight-tint: #5D6D7E;
-    --thistle-thrill: #D2B4DE;
-    --heliotrope-harmony: #DF9BFF;
-    --grape-gala: #6F2DA8;
-    --fandango-fuchsia: #B33771;
-    --mulberry-magic: #C8A2C8;
-    --plush-purple: #926EAE;
-    --dark-lavender: #734F96;
-    --shaded-lilac: #9A79A2;
-    --deep-amethyst: #884EA0;
-    --royal-purple: #7851A9;
-    --vivid-violet: #9F81A9;
-    --regal-rhapsody: #79589F;
-    --purple-prose: #634D6D;
-    --nightshade-noir: #2C3E50;
-    --blackberry-bliss: #683C5E;
-    /* Green */
-    --emerald-envy: #2ecc71;
-    --forest-fiesta: #228B22;
-    --jade-jubilation: #00a86b;
-    --minty-meadow: #00B894;
-    --olive-overture: #808000;
-    --lime-luxury: #00FF00;
-    --verdant-victory: #4CAF50;
-    --pine-perfection: #01796F;
-    --chartreuse-charm: #7FFF00;
-    --green-glow: #32CD32;
-    --spring-sensation: #87C735;
-    --teal-tint: #008080;
-    --seaweed-splash: #4E8975;
-    --hunter-green: #355E3B;
-    --fern-frost: #6EAEA1;
-    --emerald-isle: #00A693;
-    --cactus-cream: #5F9E81;
-    --lime-light: #D2F78D;
-    --grass-green: #3D8B37;
-    --sage-serenity: #87AE73;
-    --mint-mist: #D0E9C6;
-    --juniper-jewel: #6D9E8A;
-    --avocado-avenue: #568203;
-    --zesty-zucchini: #7C7F58;
-    --kiwi-kiss: #8EE53F;
-    --olive-ochre: #B5AE4E;
-    --forest-fog: #A2B29F;
-    --green-granite: #8A9A95;
-    --mojito-magic: #95DE64;
-    --lime-lagoon: #B5E3B5;
-    --sunny-splash: #FFD700;
-    /* Yellow */
-    --golden-glow: #FFD700;
-    --canary-craze: #FFFF99;
-    --mellow-yellow: #F8DE7E;
-    --daffodil-dream: #FFF56E;
-    --marigold-mirth: #FFB61E;
-    --lemon-luster: #FFEB3B;
-    --sunflower-spirit: #FDB813;
-    --honey-hue: #FFD966;
-    --mustard-magic: #FFDB58;
-    --butterscotch-blaze: #FFBC5E;
-    --amber-ambiance: #FFC300;
-    --banana-bliss: #FFE135;
-    --saffron-sunrise: #F4C542;
-    --gold-rush: #F9A602;
-    --champagne-charm: #EFD469;
-    --pineapple-promise: #F3D250;
-    --citrine-celebration: #E4D00A;
-    --daisy-delight: #FFDD77;
-    --topaz-tinge: #F8E647;
-    --goldenrod-gleam: #DAA520;
-    --yellow-yarn: #FFD571;
-    --custard-cream: #FFDB58;
-    --cornsilk-comfort: #FFF8DC;
-    --pale-primrose: #ECEAA1;
-    --lemon-lilting: #FFF44F;
-    --sun-kissed: #FFDB00;
-    --radiant-ray: #FAD02E;
-    --dandelion-dazzle: #FFD400;
-    --buttercup-burst: #F3A712;
-    --harvest-honey: #DAA520;
-    --citrus-zest: #FDCD58;
-    --midnight-mystery: #161618;
-    /* Dark */
-    --shadowy-silhouette: #1e1f20;
-    --darkened-depths: #28292b;
-    --charcoal-chasm: #313133;
-    --obsidian-ominous: #17191a;
-    --inky-void: #191a1b;
-    --blackest-night: #1e2122;
-    --pitch-black: #0a0c0d;
-    --abyssal-aura: #333435;
-    --sinister-shade: #14171a;
-    --coal-crevice: #2f3131;
-    --ebony-enigma: #251e1e;
-    --stealthy-shadow: #333536;
-    --murky-midnight: #21232b;
-    --gloomy-gloom: #191c1f;
-    --eclipsed-evening: #181818;
-    --ominous-obscurity: #272331;
-    --phantom-darkness: #0d0f10;
-    --creeping-cloak: #27201d;
-    --nebulous-night: #121416;
-    --void-vortex: #19262c;
-    --gloom-ridden: #171a1c;
-    --shrouded-silence: #0e1011;
-    --sinister-shadow: #14171a;
-    --enigmatic-eclipse: #0c0e0f;
-    --inky-imbalance: #191b1d;
-    --cryptic-cloak: #0f0f1d;
-    --dark-dread: #2e1919;
-    --velvet-vortex: #0a0c0d;
-    --phantom-pitch: #121516;
-    /*
-    *** Feel free to ignore these, I was just talking to someone on discord and had to write here,
-    But decided to keep it here. ***
-    
-    Well, what I am doing is set up re-usable codes that I can use to make consistent website )
-    I might be able to earn money online after I learn to code well and get a credit card
-    But I do have a job, so... Its not urgent
-    I mean, I can do other things too, but I am more into tech so I am going with it
-    > ***Courage is not sole strength, courage is the strngth to move on when you dont have the strength to do so*** - Cocell
-    Yeah thats right, coding is not my goal for money, coding is my hobby and passion
-    And my job is something I took as an opportunity to learn from
-    https://tenor.com/view/naruto-naruto-uzumaki-ninja-anime-punch-gif-16891388
-    */
-  }
+:root {
+  --font-color-black: #374151;
+  --font-color-mid-black: #57606e;
+  --font-color-white: #e6e8ec;
+  /* Background Type Colors */
+  --ct-bg: #ced4e595;
+  --ct-bg-alt: #dbe2ffc5;
+  --backdrop-light: #0000008c;
+  --backdrop-dark: #000000cc;
+  /* Gradient Type Colors */
+  --ct-bg-dark: linear-gradient(160deg, #1d1d1d, #18181a, #141420);
+  --ct-bg-dark-alt: linear-gradient(160deg, #505053, #2d2d31, #0e0e1a);
+  /* Accent Type Colors */
+  --light-gray-accent: #cdd1d3;
+  --light-gray-accent-mono: #aeb5b9;
+  --light-gray-accent-zeno: #858a8d;
+  --dark-gray-accent: #3C4347;
+  --dark-gray-accent-mono: #535D63;
+  --dark-gray-accent-zeno: #313638;
+  /* ***Colors*** */
+  /* White */
+  --whispering-white: #F8F8FF;
+  --vanilla-velour: #f9f9f9;
+  --pearlescent-purity: #FFF8E7;
+  --ivory-illusion: #f7fff0;
+  --ecru-elegance: #dcedf5;
+  --cream-chiffon: #fdf5e5;
+  --alabaster-ambiance: #F0F8FF;
+  --marshmallow-mist: #F5FFFA;
+  --subtle-snowfall: #F0FFFF;
+  --silken-snow: #DFF0E2;
+  --creamy-cotton: #FFFDD0;
+  --pale-purity: #E6F0FF;
+  --antique-aura: #FAEBD7;
+  --porcelain-pearl: #F4F0E5;
+  --frosted-flurry: #E1E8EB;
+  --linen-lustre: #FAF0E6;
+  --whitewash-whirl: #EDEDED;
+  --blizzard-breeze: #F9F9F9;
+  --glacial-glow: #F0F0F0;
+  --powdered-precipitation: #EAEAEA;
+  --crystal-clear: #E3E3E3;
+  --ice-ivory: #F1F1F1;
+  --cloud-comfort: #F2F2F2;
+  --silver-snowflake: #DCDCDC;
+  --faint-frosting: #F5F5F5;
+  --gentle-glow: #F8F8F8;
+  --soft-snow: #FFFAFA;
+  --airy-alabaster: #F7F7F7;
+  --whitened-whirlwind: #FDFDFD;
+  --pure-peace: #FCFCFC;
+  --arctic-ash: #F2F4F6;
+  /* Gray */
+  --charcoal-gray: #36454F;
+  --dark-gray: #383737;
+  --slate-gray: #708090;
+  --steel-gray: #4682B4;
+  --dark-steel: #3c444b;
+  --smoke-gray: #696969;
+  --ash-gray: #b8bec7;
+  --cloudy-gray: #d4d9e0;
+  --silver-steel: #C0C0C0;
+  --cool-platinum: #E5E4E2;
+  --warm-platinum: #C0C0C0;
+  --soft-gray: #d1d1d1;
+  --pale-silver: #C0C0C0;
+  --battleship-gray: #848482;
+  --mouse-gray: #8B8682;
+  --dove-gray: #525151;
+  --concrete-gray: #D2D1CD;
+  --rain-cloud-gray: #A9A9A9;
+  --stormy-gray: #778899;
+  --foggy-gray: #D6D6D6;
+  --pearl-gray: #eaeaea;
+  --moonstone-gray: #AAB2B5;
+  --pebble-gray: #D9D9D9;
+  --granite-gray: #676767;
+  --silver-lining: #C0C0C0;
+  --whale-gray: #7C8388;
+  --warm-gray: #808080;
+  --cool-gray: #B0C4DE;
+  --blue-gray: #6699CC;
+  --taupe-gray: #483C32;
+  --muted-gray: #9E9E9E;
+  /* *** */
+  --light-gray: #e3e3e3;
+  --light-lighter-gray: #f0f0f0;
+  --gray-50: #f7f7f8;
+  --gray-100: #ececf1;
+  --gray-200: #d9d9e3;
+  --gray-300: #c5c5d2;
+  --gray-400: #acacbe;
+  --gray-500: #999;
+  --gray-600: #666;
+  --gray-700: #40414f;
+  --gray-800: #343541;
+  --gray-900: #202123;
+  --gray-950: #0f0f0f;
+  /* Blue */
+  --arctic-blue: #f0f4f9;
+  --pale-ice: #dce5ee;
+  --sky-blizzard: #c8e0f6;
+  --frozen-wave: #9cc8e6;
+  --winter-chill: #bed8e8;
+  --cerulean-ice: #c3e0e8;
+  --arctic-dream: #d6e9f5;
+  --misty-frost: #d0e6f6;
+  --sapphire-breeze: #a5bfdd;
+  --tranquil-tide: #aecfd9;
+  --azure-breeze: #bcdce7;
+  --blue-haze: #bccfd9;
+  --oceanic-whisper: #c4d8e5;
+  --ethereal-blue: #c3d9ea;
+  --moonlit-marine: #8fb2cd;
+  --dreamy-blue: #95bedb;
+  --gentle-tide: #9abce2;
+  --calm-cerulean: #a7cde9;
+  --tranquil-lagoon: #97bed2;
+  --flawed-blue: #22426d;
+  --flawn-blue: #284c7c;
+  --flowing-blue: #264aad;
+  --zenithal-horizon: #88a3b8;
+  --velvet-sea: #6e99b3;
+  --arctic-zen: #7b9db9;
+  --ten-blue: #78adfd;
+  --blue: #a1c0f0;
+  --blue-light: #b8d3fc;
+  --blue-lighter: #cbe0ff;
+  --blue-100: #80aaff;
+  --blue-200: #6699ff;
+  --blue-300: #4d88ff;
+  --blue-400: #3366ff;
+  --blue-500: #1a45ff;
+  --blue-600: #0033cc;
+  --blue-800: #002266;
+  --blue-950: #000f66;
+  /* Red */
+  --crimson-red: #dc143c;
+  --ruby-red: #e74c3c;
+  --scarlet-fire: #ff2400;
+  --deep-cherry: #c0392b;
+  --vibrant-rose: #ff007f;
+  --burgundy-blush: #800020;
+  --cherry-blossom: #de3163;
+  --fiery-red: #b22222;
+  --passionate-pink: #ff4d6d;
+  --raspberry-ripple: #ff3883;
+  --tomato-tango: #ff6347;
+  --flamingo-feather: #fc8c99;
+  --coral-crush: #f88379;
+  --rose-petal: #ff66b2;
+  --candy-apple: #ff0800;
+  --rustic-red: #b7410e;
+  --velvet-vivid: #b91d47;
+  --marsala-magic: #964f4c;
+  --warm-embers: #ad1f21;
+  --chili-pepper: #9b1b30;
+  --crimson-glory: #be0032;
+  --merlot-mist: #7e354d;
+  --vivid-rouge: #a94064;
+  --bittersweet-blaze: #fe6f5e;
+  --mulberry-madness: #c85086;
+  --radiant-raspberry: #c71585;
+  --passion-punch: #ff5588;
+  --rosewood-rhapsody: #65000b;
+  --chocolate-cherry: #700137;
+  --red-50: #ffe6e6;
+  --red-100: #ff6666;
+  --red-200: #ff4d4d;
+  --red-300: #ff3333;
+  --red-400: #ff1a1a;
+  --red-500: #ff0000;
+  --red-600: #cc0000;
+  --red-700: #990000;
+  --red-800: #660000;
+  --red-900: #330000;
+  --red-950: #660f0f;
+  /* Orange */
+  --tangerine-tango: #ff7f50;
+  --pumpkin-spice: #ff7518;
+  --vivid-carrot: #ffA500;
+  --mango-madness: #ff8c1a;
+  --sunrise-orange: #ff6700;
+  --fiery-coral: #ff6f61;
+  --sunset-blaze: #fd5e53;
+  --burnt-sienna: #e97451;
+  --spiced-ginger: #b5651d;
+  --clementine-crush: #ff8000;
+  --orange-zest: #ffae42;
+  --amber-awakening: #ffbf00;
+  --goldenrod-glitter: #db9d00;
+  --marigold-magic: #ffcc00;
+  --honey-harvest: #ffdb58;
+  --autumn-blaze: #d99058;
+  --papaya-whip: #ffefd5;
+  --peach-parfait: #ffcc99;
+  --coral-cream: #ffaa80;
+  --salmon-splash: #ff8c69;
+  --apricot-ambiance: #fdd5b1;
+  --terra-cotta: #e2725b;
+  --cinnamon-spice: #d2691e;
+  --burnt-orange: #cc5500;
+  --rustic-rose: #bc6c25;
+  --copper-canyon: #7e3a12;
+  --sienna-sunrise: #c88a65;
+  --tawny-tan: #cd853f;
+  --nutmeg-nuance: #8a6e5a;
+  --spicy-brown: #ab5236;
+  --orange-light: #ffcc99;
+  --orange-lighter: #ffd9b3;
+  --orange-50: #ffe6cc;
+  --orange-100: #ffaa80;
+  --orange-200: #ff9966;
+  --orange-300: #ff884d;
+  --orange-400: #ff6633;
+  --orange-500: #ff5500;
+  --orange-600: #cc4400;
+  --orange-700: #993300;
+  --orange-800: #662200;
+  --orange-900: #331100;
+  --orange-950: #663f00;
+  /* Purple */
+  --lavender-blush: #F4E1FF;
+  --lilac-love: #B799D6;
+  --amethyst-dream: #9966CC;
+  --plum-perfection: #8E44AD;
+  --violet-velvet: #9400D3;
+  --purple-passion: #800080;
+  --royal-regalia: #6A1B9A;
+  --majestic-mauve: #9B59B6;
+  --mystic-mulberry: #C39BD3;
+  --orchid-opulence: #7D3C98;
+  --deep-purple: #5B2C6F;
+  --indigo-illusion: #4B0082;
+  --blue-violet: #8A2BE2;
+  --periwinkle-princess: #9FA8DA;
+  --twilight-tint: #5D6D7E;
+  --thistle-thrill: #D2B4DE;
+  --heliotrope-harmony: #DF9BFF;
+  --grape-gala: #6F2DA8;
+  --fandango-fuchsia: #B33771;
+  --mulberry-magic: #C8A2C8;
+  --plush-purple: #926EAE;
+  --dark-lavender: #734F96;
+  --shaded-lilac: #9A79A2;
+  --deep-amethyst: #884EA0;
+  --royal-purple: #7851A9;
+  --vivid-violet: #9F81A9;
+  --regal-rhapsody: #79589F;
+  --purple-prose: #634D6D;
+  --nightshade-noir: #2C3E50;
+  --blackberry-bliss: #683C5E;
+  /* Green */
+  --emerald-envy: #2ecc71;
+  --forest-fiesta: #228B22;
+  --jade-jubilation: #00a86b;
+  --minty-meadow: #00B894;
+  --olive-overture: #808000;
+  --lime-luxury: #00FF00;
+  --verdant-victory: #4CAF50;
+  --pine-perfection: #01796F;
+  --chartreuse-charm: #7FFF00;
+  --green-glow: #32CD32;
+  --spring-sensation: #87C735;
+  --teal-tint: #008080;
+  --seaweed-splash: #4E8975;
+  --hunter-green: #355E3B;
+  --fern-frost: #6EAEA1;
+  --emerald-isle: #00A693;
+  --cactus-cream: #5F9E81;
+  --lime-light: #D2F78D;
+  --grass-green: #3D8B37;
+  --sage-serenity: #87AE73;
+  --mint-mist: #D0E9C6;
+  --juniper-jewel: #6D9E8A;
+  --avocado-avenue: #568203;
+  --zesty-zucchini: #7C7F58;
+  --kiwi-kiss: #8EE53F;
+  --olive-ochre: #B5AE4E;
+  --forest-fog: #A2B29F;
+  --green-granite: #8A9A95;
+  --mojito-magic: #95DE64;
+  --lime-lagoon: #B5E3B5;
+  --sunny-splash: #FFD700;
+  /* Yellow */
+  --golden-glow: #FFD700;
+  --canary-craze: #FFFF99;
+  --mellow-yellow: #F8DE7E;
+  --daffodil-dream: #FFF56E;
+  --marigold-mirth: #FFB61E;
+  --lemon-luster: #FFEB3B;
+  --sunflower-spirit: #FDB813;
+  --honey-hue: #FFD966;
+  --mustard-magic: #FFDB58;
+  --butterscotch-blaze: #FFBC5E;
+  --amber-ambiance: #FFC300;
+  --banana-bliss: #FFE135;
+  --saffron-sunrise: #F4C542;
+  --gold-rush: #F9A602;
+  --champagne-charm: #EFD469;
+  --pineapple-promise: #F3D250;
+  --citrine-celebration: #E4D00A;
+  --daisy-delight: #FFDD77;
+  --topaz-tinge: #F8E647;
+  --goldenrod-gleam: #DAA520;
+  --yellow-yarn: #FFD571;
+  --custard-cream: #FFDB58;
+  --cornsilk-comfort: #FFF8DC;
+  --pale-primrose: #ECEAA1;
+  --lemon-lilting: #FFF44F;
+  --sun-kissed: #FFDB00;
+  --radiant-ray: #FAD02E;
+  --dandelion-dazzle: #FFD400;
+  --buttercup-burst: #F3A712;
+  --harvest-honey: #DAA520;
+  --citrus-zest: #FDCD58;
+  --midnight-mystery: #161618;
+  /* Dark */
+  --shadowy-silhouette: #1e1f20;
+  --darkened-depths: #28292b;
+  --charcoal-chasm: #313133;
+  --obsidian-ominous: #17191a;
+  --inky-void: #191a1b;
+  --blackest-night: #1e2122;
+  --pitch-black: #0a0c0d;
+  --abyssal-aura: #333435;
+  --sinister-shade: #14171a;
+  --coal-crevice: #2f3131;
+  --ebony-enigma: #251e1e;
+  --stealthy-shadow: #333536;
+  --murky-midnight: #21232b;
+  --gloomy-gloom: #191c1f;
+  --eclipsed-evening: #181818;
+  --ominous-obscurity: #272331;
+  --phantom-darkness: #0d0f10;
+  --creeping-cloak: #27201d;
+  --nebulous-night: #121416;
+  --void-vortex: #19262c;
+  --gloom-ridden: #171a1c;
+  --shrouded-silence: #0e1011;
+  --sinister-shadow: #14171a;
+  --enigmatic-eclipse: #0c0e0f;
+  --inky-imbalance: #191b1d;
+  --cryptic-cloak: #0f0f1d;
+  --dark-dread: #2e1919;
+  --velvet-vortex: #0a0c0d;
+  --phantom-pitch: #121516;
+  /*
+  *** Feel free to ignore these, I was just talking to someone on discord and had to write here,
+  But decided to keep it here. ***
+  
+  Well, what I am doing is set up re-usable codes that I can use to make consistent website )
+  I might be able to earn money online after I learn to code well and get a credit card
+  But I do have a job, so... Its not urgent
+  I mean, I can do other things too, but I am more into tech so I am going with it
+  > ***Courage is not sole strength, courage is the strngth to move on when you dont have the strength to do so*** - Cocell
+  Yeah thats right, coding is not my goal for money, coding is my hobby and passion
+  And my job is something I took as an opportunity to learn from
+  https://tenor.com/view/naruto-naruto-uzumaki-ninja-anime-punch-gif-16891388
+  */
+}
 
 
-  /* Another root classes for summarized quick widely used variables */
-  :root {
-    /* Easy Defining Light Variables (Goes great with lightmode) */
-    --zen-blue-back: var(--arctic-blue);
-    --zen-front: white;
-    --zen-blue-con: var(--pale-ice);
-    /* Easy Defining Dark Variables (Usefull for darkmodes) */
-    --zen-dark-back: var(--shadowy-silhouette);
-    --zen-dark-front: var(--darkened-depths);
-    --zen-dark-con: var(--charcoal-chasm);
-  }
+/* Another root classes for summarized quick widely used variables */
+:root {
+  /* Easy Defining Light Variables (Goes great with lightmode) */
+  --zen-blue-back: var(--arctic-blue);
+  --zen-front: white;
+  --zen-blue-con: var(--pale-ice);
+  /* Easy Defining Dark Variables (Usefull for darkmodes) */
+  --zen-dark-back: var(--shadowy-silhouette);
+  --zen-dark-front: var(--darkened-depths);
+  --zen-dark-con: var(--charcoal-chasm);
+}
 
-  * {
-    transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap;
-    transition-duration: 0.5s;
-  }
+:root {
+  --snap-cube: cubic-bezier(1, -1.25, 0, 2);
+}
 
-  *:focus {
-    outline: none;
-  }
+* {
+  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap;
+  transition-duration: 0.5s;
+}
 
+*:focus {
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  background: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--gray-600);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-600);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+}
+
+/* Button */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Track piece */
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+/* Handle on scrollbar handle */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media (max-width: 800px) {
   body::-webkit-scrollbar {
-    background: none;
+    display: none;
+    height: 5px;
+    width: 5px;
   }
 
-  body::-webkit-scrollbar-track {
-    background: inherit;
+  main::-webkit-scrollbar {
+    display: none;
+    width: 5px;
   }
 
   ::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-    background: none;
+    height: 5px;
+    width: 5px;
   }
+}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--gray-400);
-    border-radius: 10px;
-  }
-
-  .dark ::-webkit-scrollbar-thumb {
-    background: var(--gray-600);
-    border-radius: 10px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--gray-600);
-  }
-
-  .dark ::-webkit-scrollbar-thumb:hover {
-    background: var(--gray-500);
-  }
-
-  /* Button */
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  /* Track piece */
-  ::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-
-  /* Handle on scrollbar handle */
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-
-  @media (max-width: 800px) {
-    body::-webkit-scrollbar {
-      display: none;
-      height: 5px;
-      width: 5px;
-    }
-
-    main::-webkit-scrollbar {
-      display: none;
-      width: 5px;
-    }
-
-    ::-webkit-scrollbar {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (max-width: 300px) {
-    body::-webkit-scrollbar {
-      width: 2px;
-    }
-
-
-    main::-webkit-scrollbar {
-      width: 2px;
-    }
-
-    ::-webkit-scrollbar {
-      width: 2px;
-    }
-  }
-
-  /*
-  *** Short-hands ***
-  These are shorthands, quick classes to add one drop styles
-  */
-  .no-li-bullet {
-    list-style-type: none;
-  }
-
-  .transBg {
-    background: transparent;
-  }
-
-  .full-height {
-    height: 100%;
-  }
-
-  .full-width {
-    width: 100%;
-  }
-
-  .text-center {
-    text-align: center;
-  }
-
-  .text-justify {
-    text-align: justify;
-  }
-
-  .margin-auto {
-    margin: auto;
-  }
-
-  .comfortable-width {
-    max-width: 800px;
-    width: 100%;
-  }
-
-  .no-size-tran {
-    transition: width 0s, height 0s;
-  }
-
-  .overHidden {
-    overflow: hidden;
-  }
-
-  .dis-none {
-    display: none;
-  }
-
-  .clip-round {
-    border-radius: 100%;
-  }
-
-  .clip-round-50 {
-    border-radius: 50%;
-  }
-
-  .round {
-    border-radius: 100px;
-  }
-
-  .round2 {
-    border-radius: 2rem;
-  }
-
-  .round1-5 {
-    border-radius: 1.5rem;
-  }
-
-  .round1 {
-    border-radius: 1rem;
-  }
-
-  .round08 {
-    border-radius: 0.8rem;
-  }
-
-  .round05 {
-    border-radius: 0.5rem;
-  }
-
-  .gap20 {
-    gap: 20px;
-  }
-
-  .gap10 {
-    gap: 10px;
-  }
-
-  .gap8 {
-    gap: 8px;
-  }
-
-  .gap5 {
-    gap: 5px;
-  }
-
-  .pad20 {
-    padding: 20px;
-  }
-
-  .pad10 {
-    padding: 10px;
-  }
-
-  .pad8 {
-    padding: 8px;
-  }
-
-  .pad5 {
-    padding: 5px;
-  }
-
-  .flexR {
-    display: flex;
-  }
-
-  .flexC {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blocked {
-    display: block;
+@media (max-width: 300px) {
+  body::-webkit-scrollbar {
+    width: 2px;
   }
 
 
-  /*
-  *** Dynamic Shorthands ***
-  These are dynamic shorthands, they are handled by media queris below.
-  They are identified and made unique by the prefix `d-` to target them differently than previous shorthands.
-  */
+  main::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+
+/*
+*** Short-hands ***
+These are shorthands, quick classes to add one drop styles
+*/
+.no-li-bullet {
+  list-style-type: none;
+}
+
+.transBg {
+  background: transparent;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.comfortable-width {
+  max-width: 800px;
+  width: 100%;
+}
+
+.no-size-tran {
+  transition: width 0s, height 0s;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.dis-none {
+  display: none;
+}
+
+.clip-round {
+  border-radius: 100%;
+}
+
+.clip-round-50 {
+  border-radius: 50%;
+}
+
+.round {
+  border-radius: 100px;
+}
+
+.round2 {
+  border-radius: 2rem;
+}
+
+.round1-5 {
+  border-radius: 1.5rem;
+}
+
+.round1 {
+  border-radius: 1rem;
+}
+
+.round08 {
+  border-radius: 0.8rem;
+}
+
+.round05 {
+  border-radius: 0.5rem;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.gap5 {
+  gap: 5px;
+}
+
+.pad20 {
+  padding: 20px;
+}
+
+.pad10 {
+  padding: 10px;
+}
+
+.pad8 {
+  padding: 8px;
+}
+
+.pad5 {
+  padding: 5px;
+}
+
+.flexR {
+  display: flex;
+}
+
+.flexC {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocked {
+  display: block;
+}
+
+
+/*
+*** Dynamic Shorthands ***
+These are dynamic shorthands, they are handled by media queris below.
+They are identified and made unique by the prefix `d-` to target them differently than previous shorthands.
+*/
+.d-round2 {
+  border-radius: 2rem;
+}
+
+.d-round1-5 {
+  border-radius: 1.5rem;
+}
+
+.d-round1 {
+  border-radius: 1rem;
+}
+
+.d-round08 {
+  border-radius: 0.8rem;
+}
+
+.d-round05 {
+  border-radius: 0.5rem;
+}
+
+.d-gap20 {
+  gap: 20px;
+}
+
+.d-gap10 {
+  gap: 10px;
+}
+
+.d-gap8 {
+  gap: 8px;
+}
+
+.d-gap5 {
+  gap: 5px;
+}
+
+.d-pad20 {
+  padding: 20px;
+}
+
+.d-pad10 {
+  padding: 10px;
+}
+
+.d-pad8 {
+  padding: 8px;
+}
+
+.d-pad5 {
+  padding: 5px;
+}
+
+/* Another root for dynamic variables*/
+:root {
+  --d-pad20: 20px;
+  --d-pad-sp-20: 20px;
+  --d-pad1-5: 15px;
+  --d-pad-sp-15: 15px;
+  --d-pad10: 10px;
+  --d-pad8: 8px;
+  --d-pad5: 5px;
+  --d-round2: 2rem;
+  --d-round1-5: 1.5rem;
+  --d-round1: 1rem;
+  --d-round08: 0.8rem;
+  --d-round05: 0.5rem;
+  --d-gap20: 20px;
+  --d-gap10: 10px;
+  --d-gap8: 8px;
+  --d-gap: 5px;
+  --d-20px: 20px;
+  --d-10px: 10px;
+  --d-8px: 8px;
+  --d-5px: 5px;
+  
+  --d-3rem: 3rem;
+  --d-2-5rem: 2.5rem;
+  --d-2rem: 2rem;
+  --d-1-5rem: 1.5rem;
+  --d-1rem: 1rem;
+  --d-0-8rem: 0.8rem;
+  --d-0-5rem: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --d-pad20: 10px;
+    --d-pad-sp-20: 15px;
+    --d-pad1-5: 7.5px;
+    --d-pad-sp-15: 10px;
+    --d-pad10: 5px;
+    --d-pad8: 4px;
+    --d-pad5: 2.5px;
+    --d-round2: 1rem;
+    --d-round1-5: 0.75rem;
+    --d-round1: 0.5rem;
+    --d-round08: 0.4rem;
+    --d-round05: 0.25rem;
+    --d-gap20: 10px;
+    --d-gap10: 5px;
+    --d-gap8: 4px;
+    --d-gap: 2.5px;
+    --d-20px: 10px;
+    --d-10px: 5px;
+    --d-8px: 4px;
+    --d-5px: 2.5px;
+    
+    --d-3rem: 1.5rem;
+    --d-2-5rem: 1.25rem;
+    --d-2rem: 1rem;
+    --d-1-5rem: 0.75rem;
+    --d-1rem: 0.5rem;
+    --d-0-8rem: 0.4rem;
+    --d-0-5rem: 0.25rem;
+  }
+
   .d-round2 {
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 
   .d-round1-5 {
-    border-radius: 1.5rem;
+    border-radius: 0.75rem;
   }
 
   .d-round1 {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 
   .d-round08 {
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
   }
 
   .d-round05 {
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
   }
 
   .d-gap20 {
-    gap: 20px;
-  }
-
-  .d-gap10 {
     gap: 10px;
   }
 
-  .d-gap8 {
-    gap: 8px;
-  }
-
-  .d-gap5 {
+  .d-gap10 {
     gap: 5px;
   }
 
-  .d-pad20 {
-    padding: 20px;
+  .d-gap8 {
+    gap: 4px;
   }
 
-  .d-pad10 {
+  .d-gap5 {
+    gap: 2.5px;
+  }
+
+  .d-pad20 {
     padding: 10px;
   }
 
+  .d-pad10 {
+    padding: 5px;
+  }
+
   .d-pad8 {
-    padding: 8px;
+    padding: 4px;
   }
 
   .d-pad5 {
-    padding: 5px;
+    padding: 2.5px;
   }
+}
 
-  /* Another root for dynamic variables*/
+@media (max-width: 300px) {
   :root {
-    --d-pad20: 20px;
-    --d-pad-sp-20: 20px;
-    --d-pad1-5: 15px;
-    --d-pad-sp-15: 15px;
-    --d-pad10: 10px;
-    --d-pad8: 8px;
-    --d-pad5: 5px;
-    --d-round2: 2rem;
-    --d-round1-5: 1.5rem;
-    --d-round1: 1rem;
-    --d-round08: 0.8rem;
-    --d-round05: 0.5rem;
-    --d-gap20: 20px;
-    --d-gap10: 10px;
-    --d-gap8: 8px;
-    --d-gap: 5px;
-    --d-10px: 10px;
-    --d-8px: 8px;
-    --d-5px: 5px;
-    
-    --d-3rem: 3rem;
-    --d-2-5rem: 2.5rem;
-    --d-2rem: 2rem;
-    --d-1-5rem: 1.5rem;
-    --d-1rem: 1rem;
-    --d-0-8rem: 0.8rem;
-    --d-0-5rem: 0.5rem;
+    --d-pad20: 5px;
+    --d-pad-sp-20: 10px;
+    --d-pad1-5: 3.75px;
+    --d-pad-sp-15: 5px;
+    --d-pad10: 2.5px;
+    --d-pad8: 2px;
+    --d-pad5: 1.25px;
+    --d-round2: 0.5rem;
+    --d-round1-5: 0.375rem;
+    --d-round1: 0;
+    --d-round08: 0;
+    --d-round05: 0;
+    --d-gap20: 5px;
+    --d-gap10: 2.5px;
+    --d-gap8: 2px;
+    --d-gap: 1.25px;
+    --d-20px: 5px;
+    --d-10px: 2.5px;
+    --d-8px: 2px;
+    --d-5px: 1.25px;
+
+    --d-3rem: 0.75rem;
+    --d-2-5rem: 0.625rem;
+    --d-2rem: 0.5rem;
+    --d-1-5rem: 0.375rem;
+    --d-1rem: 0.25rem;
+    --d-0-8rem: 0.2rem;
+    --d-0-5rem: 0.125rem;
   }
 
-  @media (max-width: 800px) {
-    :root {
-      --d-pad20: 10px;
-      --d-pad-sp-20: 15px;
-      --d-pad1-5: 7.5px;
-      --d-pad-sp-15: 10px;
-      --d-pad10: 5px;
-      --d-pad8: 4px;
-      --d-pad5: 2.5px;
-      --d-round2: 1rem;
-      --d-round1-5: 0.75rem;
-      --d-round1: 0.5rem;
-      --d-round08: 0.4rem;
-      --d-round05: 0.25rem;
-      --d-gap20: 10px;
-      --d-gap10: 5px;
-      --d-gap8: 4px;
-      --d-gap: 2.5px;
-      --d-10px: 5px;
-      --d-8px: 4px;
-      --d-5px: 2.5px;
-      
-      --d-3rem: 1.5rem;
-      --d-2-5rem: 1.25rem;
-      --d-2rem: 1rem;
-      --d-1-5rem: 0.75rem;
-      --d-1rem: 0.5rem;
-      --d-0-8rem: 0.4rem;
-      --d-0-5rem: 0.25rem;
-    }
-
-    .d-round2 {
-      border-radius: 1rem;
-    }
-
-    .d-round1-5 {
-      border-radius: 0.75rem;
-    }
-
-    .d-round1 {
-      border-radius: 0.5rem;
-    }
-
-    .d-round08 {
-      border-radius: 0.4rem;
-    }
-
-    .d-round05 {
-      border-radius: 0.25rem;
-    }
-
-    .d-gap20 {
-      gap: 10px;
-    }
-
-    .d-gap10 {
-      gap: 5px;
-    }
-
-    .d-gap8 {
-      gap: 4px;
-    }
-
-    .d-gap5 {
-      gap: 2.5px;
-    }
-
-    .d-pad20 {
-      padding: 10px;
-    }
-
-    .d-pad10 {
-      padding: 5px;
-    }
-
-    .d-pad8 {
-      padding: 4px;
-    }
-
-    .d-pad5 {
-      padding: 2.5px;
-    }
+  .d-round2 {
+    border-radius: 0.25rem;
   }
 
-  @media (max-width: 300px) {
-    :root {
-      --d-pad20: 5px;
-      --d-pad-sp-20: 10px;
-      --d-pad1-5: 3.75px;
-      --d-pad-sp-15: 5px;
-      --d-pad10: 2.5px;
-      --d-pad8: 2px;
-      --d-pad5: 1.25px;
-      --d-round2: 0.5rem;
-      --d-round1-5: 0.375rem;
-      --d-round1: 0;
-      --d-round08: 0;
-      --d-round05: 0;
-      --d-gap20: 5px;
-      --d-gap10: 2.5px;
-      --d-gap8: 2px;
-      --d-gap: 1.25px;
-      --d-10px: 2.5px;
-      --d-8px: 2px;
-      --d-5px: 1.25px;
-
-      --d-3rem: 0.75rem;
-      --d-2-5rem: 0.625rem;
-      --d-2rem: 0.5rem;
-      --d-1-5rem: 0.375rem;
-      --d-1rem: 0.25rem;
-      --d-0-8rem: 0.2rem;
-      --d-0-5rem: 0.125rem;
-    }
-
-    .d-round2 {
-      border-radius: 0.25rem;
-    }
-
-    .d-round1-5 {
-      border-radius: 0.375rem;
-    }
-
-    .d-round1 {
-      border-radius: 0;
-    }
-
-    .d-round08 {
-      border-radius: 0;
-    }
-
-    .d-round05 {
-      border-radius: 0;
-    }
-
-    .d-gap20 {
-      gap: 5px;
-    }
-
-    .d-gap10 {
-      gap: 2.5px;
-    }
-
-    .d-gap8 {
-      gap: 2px;
-    }
-
-    .d-gap5 {
-      gap: 1.25px;
-    }
-
-    .d-pad20 {
-      padding: 5px;
-    }
-
-    .d-pad10 {
-      padding: 2.5px;
-    }
-
-    .d-pad8 {
-      padding: 2px;
-    }
-
-    .d-pad5 {
-      padding: 1.25px;
-    }
+  .d-round1-5 {
+    border-radius: 0.375rem;
   }
 
-  /*
-  *** Component Type Classes
-  Usefull for creting quick dynamic components with classes
-  */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 28px;
-  }
-  
-  .switch input {
-    display: none;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--ruby-red);
-    border-radius: 28px;
-    transition: background 0.4s cubic-bezier(1, -1.25, 0, 2);
+  .d-round1 {
+    border-radius: 0;
   }
 
-  .dark .slider {
-    background: var(--zen-dark-back);
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 4px;
-    background: white;
-    border-radius: 50%;
-    transition: transform 0.4s cubic-bezier(1, -1.25, 0, 2);
-  }
-  
-  input:checked + .slider {
-    background: var(--blue);
+  .d-round08 {
+    border-radius: 0;
   }
 
-  .dark input:checked + .slider {
-    background: var(--flawn-blue);
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(20px);
+  .d-round05 {
+    border-radius: 0;
   }
 
-  .small-icon {
-    width: 120px;
+  .d-gap20 {
+    gap: 5px;
   }
 
-  .mid-icon {
-    width: 220px;
+  .d-gap10 {
+    gap: 2.5px;
   }
 
-  .big-icon {
-    width: 320px;
+  .d-gap8 {
+    gap: 2px;
   }
 
-  .-icon {
-    border-radius: 50%;
-    display: block;
-    pointer-events: none;
-    user-select: none;
+  .d-gap5 {
+    gap: 1.25px;
   }
 
-  .tab-window {
-    overflow: auto;
-  }
-
-  .tabs {
-    padding: var(--d-5px);
-    display: flex;
-    border-radius: 2rem;
-    background: var(--blue-light);
-    user-select: none;
-    cursor: pointer;
-    color: inherit
-  }
-
-  .tabs:active {
-    background: var(--blue);
-  }
-
-  .dark .tabs {
-    background: var(--flawed-blue);
-  }
-
-  .dark .tabs:active {
-    background: var(--flawn-blue);
-  }
-
-  .tabs-icon, .tabs-text {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  .d-pad20 {
     padding: 5px;
   }
 
+  .d-pad10 {
+    padding: 2.5px;
+  }
+
+  .d-pad8 {
+    padding: 2px;
+  }
+
+  .d-pad5 {
+    padding: 1.25px;
+  }
+}
+
+/*
+*** Component Type Classes
+Usefull for creting quick dynamic components with classes
+*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ruby-red);
+  border-radius: 28px;
+  transition: background 0.4s cubic-bezier(1, -1.25, 0, 2);
+}
+
+.dark .slider {
+  background: var(--zen-dark-back);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(1, -1.25, 0, 2);
+}
+
+input:checked + .slider {
+  background: var(--blue);
+}
+
+.dark input:checked + .slider {
+  background: var(--flawn-blue);
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.small-icon {
+  width: 120px;
+}
+
+.mid-icon {
+  width: 220px;
+}
+
+.big-icon {
+  width: 320px;
+}
+
+.-icon {
+  border-radius: 50%;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.tab-window {
+  overflow: auto;
+}
+
+.tabs {
+  padding: var(--d-5px);
+  display: flex;
+  border-radius: 2rem;
+  background: var(--blue-light);
+  user-select: none;
+  cursor: pointer;
+  color: inherit
+}
+
+.tabs:active {
+  background: var(--blue);
+}
+
+.dark .tabs {
+  background: var(--flawed-blue);
+}
+
+.dark .tabs:active {
+  background: var(--flawn-blue);
+}
+
+.tabs-icon, .tabs-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.tabs-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
   .tabs-icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+.opened-tab {
+  background: var(--ten-blue);
+}
+
+.dark .opened-tab {
+  background: var(--flowing-blue);
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(95%);
+    opacity: 0.95;
   }
 
-  @media (max-width: 800px) {
-    .tabs-icon {
-      font-size: 1rem;
-    }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out {
+  from {
+    transform: scale(100%);
+    opacity: 1;
   }
 
-  .opened-tab {
-    background: var(--ten-blue);
+  to {
+    
+    transform: scale(95%);
+    opacity: 0.95;
+  }
+}
+
+.dropdown-menu {
+  position: relative;
+  background: var(--zen-front);
+  padding: var(--d-10px);
+  border-radius: var(--d-0-5rem);
+  user-select: none;
+}
+
+.dropdown-menu .dropdown-modal {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-10px);
+  background: var(--zen-front);
+  width: 100%;
+  animation: scale-out 1s;
+}
+
+.dropdown-menu:hover .dropdown-modal {
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.dropdown-menu .dropdown-modal .dropdown-option {
+  background: var(--zen-front);
+}
+
+.zen-sp {
+  background: linear-gradient(90deg, #7aa7fc, #e273ca);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.zen-back {
+  background: var(--zen-blue-back);
+}
+
+.dark .zen-back {
+  background: var(--zen-dark-back);
+}
+
+.zen-front {
+  background: var(--zen-front);
+}
+
+.zen-front-con {
+  background: var(--zen-blue-con);
+}
+
+.dark .zen-front-con {
+  background: var(--zen-dark-con);
+}
+
+/* HTML elements */
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--font-color-black);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: white;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+a {
+  color: #0086ff;
+}
+
+a:active {
+  color: #FF7900;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 5px;
+  user-select: none;
+  cursor: pointer;
+  font-size: inherit;
+  background: var(--light-gray-accent);
+  color: inherit;
+}
+
+button:active {
+  background: var(--light-gray-accent-mono);
+}
+
+button:disabled {
+  background: var(--light-gray-accent-zeno);
+}
+
+.dark button {
+  background: var(--dark-gray-accent);
+  color: inherit;
+}
+
+.dark button:active {
+  background: var(--dark-gray-accent-mono);
+}
+
+.dark button:disabled {
+  background: var(--dark-gray-accent-zeno);
+}
+
+input, select {
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: inherit;
+  background: white;
+  color: inherit;
+}
+
+.dark input, .dark select {
+  background: var(--zen-dark-front);
+  color: inherit;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: transparent;
+  color: inherit;
+  transition: width 0s, height 0s;
+}
+
+.dark {
+  background: var(--zen-dark-back);
+  color: var(--font-color-white);
+}
+
+@keyframes dialog-open {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
   }
 
-  .dark .opened-tab {
-    background: var(--flowing-blue);
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dialog-close {
+  from {
+    opacity: 1;
+    transform: scale(100%);
   }
 
-  @keyframes scale-in {
-    from {
-      transform: scale(95%);
-      opacity: 0.95;
-    }
-
-    to {
-      transform: scale(100%);
-      opacity: 1;
-    }
+  to {
+    opacity: 0;
+    transform: scale(90%);
   }
+}
 
-  @keyframes scale-out {
-    from {
-      transform: scale(100%);
-      opacity: 1;
-    }
+dialog {
+  background: var(--zen-front);
+  border: none;
+  border-radius: var(--d-round1);
+  color: inherit;
+  transition: opacity ease-out, transform ease-out, overlay ease-out allow-discrete, display ease-out allow-discrete;
+  transition-duration: 0.5s;
+  animation: dialog-close 0.5s;
+}
 
-    to {
-      
-      transform: scale(95%);
-      opacity: 0.95;
-    }
-  }
+.dark dialog {
+  background: var(--zen-dark-front);
+  color: inherit;
+}
 
-  .dropdown-menu {
-    position: relative;
-    background: var(--zen-front);
-    padding: var(--d-10px);
-    border-radius: var(--d-0-5rem);
-    user-select: none;
-  }
+dialog::backdrop {
+  background: black;
+  opacity: 0.5;
+}
 
-  .dropdown-menu .dropdown-modal {
-    visibility: hidden;
-    position: absolute;
-    top: calc(100%);
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--d-10px);
-    background: var(--zen-front);
-    width: 100%;
-    animation: scale-out 1s;
-  }
+dialog[open] {
+  animation: dialog-open 0.5s;
+}
 
-  .dropdown-menu:hover .dropdown-modal {
-    visibility: visible;
-    animation: scale-in 0.5s;
-  }
 
-  .dropdown-menu .dropdown-modal .dropdown-option {
-    background: var(--zen-front);
-  }
 
-  .zen-sp {
-    background: linear-gradient(90deg, #7aa7fc, #e273ca);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
 
-  .zen-back {
-    background: var(--zen-blue-back);
-  }
 
-  .dark .zen-back {
-    background: var(--zen-dark-back);
-  }
 
-  .zen-front {
-    background: var(--zen-front);
-  }
 
-  .dark .zen-front {
-    background: var(--zen-dark-front);
-  }
 
-  /* HTML elements */
-  html {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: var(--font-color-black);
-    scroll-behavior: smooth;
-  }
 
-  body {
-    margin: 0;
-    background: white;
-    height: 100%;
-  }
 
-  iframe {
-    border: none;
-  }
 
-  img {
-    max-height: 100%;
-    max-width: 100%;
-  }
 
-  a {
-    color: #0086ff;
-  }
 
-  a:active {
-    color: #FF7900;
-  }
 
-  button {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 5px;
-    user-select: none;
-    cursor: pointer;
-    font-size: inherit;
-    background: var(--light-gray-accent);
-    color: inherit;
-  }
 
-  button:active {
+
+
+
+/* zen Ui Styles */
+.zen-ui-i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.zen-ui button {
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: inherit;
+  padding: var(--d-gap20);
+}
+
+.zen-ui-chi button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  padding: var(--d-gap20);
+  border-radius: var(--d-0-5rem);
+}
+
+.zen-ui-psubo {
+  background: var(--blue-lighter);
+  user-select: none;
+  cursor: pointer;
+}
+
+.dark .zen-ui-psubo {
+  background: var(--flawed-blue);
+}
+
+.zen-ui-psubo:active {
+  background: var(--blue-400);
+}
+
+.zen-title {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+}
+
+.zen-title h1 {
+  font-size: 2rem;
+  margin-block: 0;
+}
+
+.zen-pallete-pastel-dessert {
+  --hot-pink: #FFAEBC;
+  --tiffany-blue: #A0E7E5;
+  --mint: #B4F8C8;
+  --dessert: #FBE7C6;
+}
+
+.zen-pallete-mystic {
+  --cinder: #0B0B12;
+  --biloba-flower: #AAB3EC;
+  --kimberly: #7267A2;
+  --cannon-pink: #914A64;
+}
+
+.zen-pallete-twilight-spec {
+  --periwinkle-gray: #CAD5EC;
+  --ebony: #0C0B20;
+  --gigas: #4A41B2;
+  --wild-blue-yonder: #8187AF;
+}
+
+.zen-pallete-midnight-ser {
+  --bunting: #17224b;
+  --san-marino: #415DA9;
+  --cold-purple: #B0B0E4;
+  --havelock-blue: #6E93E1;
+}
+
+@media (min-width: 800px) {
+  .zen-ui button:hover {
     background: var(--light-gray-accent-mono);
   }
 
-  .dark button {
-    background: var(--dark-gray-accent);
-    color: inherit;
+  .dark .zen-ui button:hover {
+    background: var(--zen-dark-con);
   }
 
-  .dark button:active {
-    background: var(--dark-gray-accent-mono);
+  .zen-ui-psubo:hover {
+    background: var(--blue-light);
   }
 
-  input, select {
-    padding: 5px;
-    border-radius: 0.5rem;
-    border: none;
-    font-size: inherit;
-    background: white;
-    color: inherit;
+  .dark .zen-ui-psubo:hover {
+    background: var(--flawn-blue);
   }
 
-  .dark input, .dark select {
-    background: var(--zen-dark-front);
-    color: inherit;
+  .zen-ui-psubo:hover {
+    background: var(--blue-light);
   }
 
-  textarea {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    background: transparent;
-    color: inherit;
-    transition: width 0s, height 0s;
+  .dark .zen-ui-psubo:hover {
+    background: var(--flawn-blue);
   }
+}
 
-  .dark {
-    background: var(--zen-dark-back);
-    color: var(--font-color-white);
-  }
-
-  @keyframes dialog-open {
-    from {
-      opacity: 0;
-      transform: translate3d(0, 10%, 0);
-    }
-
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @keyframes dialog-close {
-    from {
-      opacity: 1;
-      transform: scale(100%);
-    }
-
-    to {
-      opacity: 0;
-      transform: scale(90%);
-    }
-  }
-
-  dialog {
-    background: var(--zen-front);
-    border: none;
-    border-radius: var(--d-round1);
-    color: inherit;
-    transition: opacity ease-out, transform ease-out, overlay ease-out allow-discrete, display ease-out allow-discrete;
-    transition-duration: 0.5s;
-    animation: dialog-close 0.5s;
-  }
-
-  .dark dialog {
-    background: var(--zen-dark-front);
-    color: inherit;
-  }
-
-  dialog::backdrop {
-    background: black;
-    opacity: 0.5;
-  }
-
-  dialog[open] {
-    animation: dialog-open 0.5s;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* zen Ui Styles */
-  .zen-ui-i {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-  }
-
-  .zen-ui button {
-    border-radius: 100px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    color: inherit;
-    padding: var(--d-gap20);
-  }
-
-  .zen-ui-chi button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: inherit;
-    padding: var(--d-gap20);
-    border-radius: var(--d-0-5rem);
-  }
-
-  .zen-ui-psubo {
-    background: var(--blue-lighter);
-    user-select: none;
-    cursor: pointer;
-  }
-
-  .dark .zen-ui-psubo {
-    background: var(--flawed-blue);
-  }
-
-  .zen-ui-psubo:active {
-    background: var(--blue-400);
-  }
-
-  .zen-title {
-    display: inline-flex;
-    align-items: center;
-    height: 40px;
-  }
-
+@media (max-width: 800px) {
   .zen-title h1 {
-    font-size: 2rem;
-    margin-block: 0;
+    font-size: 1rem;
   }
+}
 
-  .zen-pallete-pastel-dessert {
-    --hot-pink: #FFAEBC;
-    --tiffany-blue: #A0E7E5;
-    --mint: #B4F8C8;
-    --dessert: #FBE7C6;
+@media (max-width: 300px) {
+  .zen-title h1 {
+    font-size: 0.8rem;
   }
+}
 
-  .zen-pallete-mystic {
-    --cinder: #0B0B12;
-    --biloba-flower: #AAB3EC;
-    --kimberly: #7267A2;
-    --cannon-pink: #914A64;
-  }
+.zen-ui button:active {
+  background: var(--gray-500);
+}
 
-  .zen-pallete-twilight-spec {
-    --periwinkle-gray: #CAD5EC;
-    --ebony: #0C0B20;
-    --gigas: #4A41B2;
-    --wild-blue-yonder: #8187AF;
-  }
+.dark .zen-ui button:active {
+  background: var(--dark-gray-accent-mono);
+}
 
-  .zen-pallete-midnight-ser {
-    --bunting: #17224b;
-    --san-marino: #415DA9;
-    --cold-purple: #B0B0E4;
-    --havelock-blue: #6E93E1;
-  }
+.zen-ui button:disabled, .dark .zen-ui button:disabled {
+  background: transparent;
+  cursor: default;
+}
 
-  @media (min-width: 800px) {
-    .zen-ui button:hover {
-      background: var(--light-gray-accent-mono);
-    }
-
-    .dark .zen-ui button:hover {
-      background: var(--zen-dark-con);
-    }
-
-    .zen-ui-psubo:hover {
-      background: var(--blue-light);
-    }
-
-    .dark .zen-ui-psubo:hover {
-      background: var(--flawn-blue);
-    }
-
-    .zen-ui-psubo:hover {
-      background: var(--blue-light);
-    }
-
-    .dark .zen-ui-psubo:hover {
-      background: var(--flawn-blue);
-    }
-  }
-
-  @media (max-width: 800px) {
-    .zen-title h1 {
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 300px) {
-    .zen-title h1 {
-      font-size: 0.8rem;
-    }
-  }
-
-  .zen-ui button:active {
-    background: var(--gray-500);
-  }
-
-  .dark .zen-ui button:active {
-    background: var(--dark-gray-accent-mono);
-  }
+.dark .zen-ui button:disabled {
+  background: transparent;
+  cursor: default;
+}
