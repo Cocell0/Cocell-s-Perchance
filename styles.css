@@ -937,52 +937,7 @@ input:checked + .slider:before {
   overflow: auto;
 }
 
-.tabs {
-  padding: var(--d-5px);
-  display: flex;
-  border-radius: 2rem;
-  background: var(--blue-light);
-  user-select: none;
-  cursor: pointer;
-  color: inherit
-}
 
-.tabs:active {
-  background: var(--blue);
-}
-
-.dark .tabs {
-  background: var(--flawed-blue);
-}
-
-.dark .tabs:active {
-  background: var(--flawn-blue);
-}
-
-.tabs-icon, .tabs-text {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-
-.tabs-icon {
-  font-size: 1.2rem;
-}
-
-@media (max-width: 800px) {
-  .tabs-icon {
-    font-size: 1rem;
-  }
-}
-
-.opened-tab {
-  background: var(--ten-blue);
-}
-
-.dark .opened-tab {
-  background: var(--flowing-blue);
-}
 
 @keyframes scale-in {
   from {
