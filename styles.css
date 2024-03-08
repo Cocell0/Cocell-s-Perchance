@@ -378,7 +378,7 @@
 }
 
 * {
-  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap;
+  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap, scale;
   transition-duration: 0.5s;
 }
 
