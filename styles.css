@@ -378,7 +378,7 @@
 }
 
 * {
-  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap, scale;
+  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap, transform;
   transition-duration: 0.5s;
 }
 
@@ -911,7 +911,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(20px);
+  transform: translateX(22px);
 }
 
 .small-icon {
@@ -938,6 +938,129 @@ input:checked + .slider:before {
 }
 
 
+
+.tabs {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  text-align: left;
+  display: flex;
+  width: 100%;
+  padding: 2.5px;
+  border-radius: 0.5rem;
+  background: transparent;
+  user-select: none;
+  cursor: pointer;
+  color: inherit;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .tabs {
+  background: transparent;
+}
+
+/* Tabs shadow is used so that if texts overflow they seamlessly blend into the background instead of creatnig ugly clipping effects */
+.tabs-shadow-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 35px;
+  display: flex;
+}
+
+.tabs-shadow {
+  --shadow-bg-color: var(--vanilla-velour);
+  background: linear-gradient(90deg, transparent, var(--shadow-bg-color) 70%);
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.dark .tabs-shadow {
+  --shadow-bg-color: #181818;
+}
+
+@media (min-width: 800px) {
+  .tabs:hover {
+    background: var(--pearl-gray);
+  }
+
+  .dark .tabs:hover {
+    background: var(--zen-dark-con);
+  }
+
+  .tabs:hover .tabs-shadow {
+    --shadow-bg-color: var(--pearl-gray);
+  }
+
+  .dark .tabs:hover .tabs-shadow {
+    --shadow-bg-color: var(--zen-dark-con);
+  }
+}
+
+.tabs:focus-visible {
+  outline: none;
+  border-color: black;
+}
+
+.dark .tabs:focus-visible {
+  border-color: white;
+}
+
+.opened-tab .tabs-shadow,
+.opened-tab:hover .tabs-shadow,
+.opened-tab:active .tabs-shadow,
+.tabs:active .tabs-shadow {
+  --shadow-bg-color: var(--foggy-gray);
+}
+
+.dark .opened-tab .tabs-shadow,
+.dark .opened-tab:hover .tabs-shadow,
+.dark .opened-tab:active .tabs-shadow,
+.dark .tabs:active .tabs-shadow {
+  --shadow-bg-color: var(--zen-dark-front);
+}
+
+.tabs-icon, .tabs-text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.tabs-text {
+  text-wrap: nowrap;
+  width: 80%;
+  justify-content: left;
+}
+
+.tabs:active .tabs-icon {
+  font-size: 0.8rem;
+}
+
+.tabs-icon {
+  font-size: 1.2rem;
+  padding-inline: 8px;
+  width: 25px;
+  height: 18px;
+  transition-property: font-size;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(1, -0.5, 0.5, 3);
+}
+
+.opened-tab, .opened-tab:active,
+.opened-tab:hover,
+.tabs:active {
+  background: var(--foggy-gray);
+}
+
+.dark .opened-tab,
+.dark .opened-tab:active,
+.dark .opened-tab:hover,
+.dark .tabs:active {
+  background: var(--zen-dark-front);
+}
 
 @keyframes scale-in {
   from {
