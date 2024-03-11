@@ -520,4 +520,36 @@ function truncateText(text, maxLength) {
     return words.slice(0, maxLength).join(' ');
 }
 
+function search(containerId) {
+  var filter = document.querySelector('input[type="text"]').value;
+  var container, elements, i, querElement, querText, serElement, serText;
 
+  // Remove special characters from the search query using regular expression
+  filter = filter
+    .replace(/[^\w\s]/g, "")
+    .trim()
+    .toLowerCase();
+
+  container = document.getElementById(containerId);
+  elements = container.querySelectorAll("[quer]");
+
+  for (i = 0; i < elements.length; i++) {
+    querElement = elements[i].getAttribute("quer");
+    serElement = elements[i].querySelector("[ser]"); // Get the first element with ser attribute
+
+    if (serElement) {
+      serText = serElement.textContent || serElement.innerText;
+      // Remove special characters from text content using regular expression
+      querText = serText.replace(/[^\w\s]/g, "").toLowerCase();
+    } else {
+      querText = querElement.toLowerCase();
+    }
+
+    // Use includes() for case-insensitive comparison
+    if (querText.includes(filter)) {
+      elements[i].style.display = "";
+    } else {
+      elements[i].style.display = "none";
+    }
+  }
+}
