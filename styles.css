@@ -16,7 +16,7 @@
   --light-gray-accent-zeno: #858a8d;
   --dark-gray-accent: #3C4347;
   --dark-gray-accent-mono: #535D63;
-  --dark-gray-accent-zeno: #313638;
+  --dark-gray-accent-zeno: #1b1e1e;
   /* ***Colors*** */
   /* White */
   --whispering-white: #F8F8FF;
@@ -1199,6 +1199,7 @@ button:active {
 }
 
 button:disabled {
+  cursor: not-allowed;
   background: var(--light-gray-accent-zeno);
 }
 
@@ -1436,10 +1437,8 @@ dialog[open] {
 
 .zen-ui button:disabled, .dark .zen-ui button:disabled {
   background: transparent;
-  cursor: default;
 }
 
 .dark .zen-ui button:disabled {
   background: transparent;
-  cursor: default;
 }
