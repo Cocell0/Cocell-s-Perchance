@@ -489,6 +489,26 @@ These are shorthands, quick classes to add one drop styles
   height: 100%;
 }
 
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+} 
+
+.full-overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
 .full-width {
   width: 100%;
 }
