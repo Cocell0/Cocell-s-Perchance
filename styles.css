@@ -2,6 +2,7 @@
   --font-color-black: #374151;
   --font-color-mid-black: #57606e;
   --font-color-white: #e6e8ec;
+  --font-color-mid-white: #cccdcf;
   /* Background Type Colors */
   --ct-bg: #ced4e595;
   --ct-bg-alt: #dbe2ffc5;
@@ -378,8 +379,9 @@
 }
 
 * {
-  transition-property: padding, border-radius, white-space, display, position, height, width, margin, gap, transform;
-  transition-duration: 0.5s;
+  --def-transition: all 0.5s, background-color 0s, color, 0s;
+  transition: var(--def-transition), width 0.4s, height 0.4s;
+  box-sizing: unset;
 }
 
 *:focus {
@@ -456,6 +458,10 @@ body::-webkit-scrollbar-track {
     height: 5px;
     width: 5px;
   }
+
+  .no-scroll-from-mid::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (max-width: 300px) {
@@ -471,6 +477,14 @@ body::-webkit-scrollbar-track {
   ::-webkit-scrollbar {
     width: 2px;
   }
+}
+
+.no-scroll::-webkit-scrollbar, .hover-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hover-scroll:hover::-webkit-scrollbar {
+  display: unset;
 }
 
 /*
@@ -883,6 +897,17 @@ They are identified and made unique by the prefix `d-` to target them differentl
 *** Component Type Classes
 Usefull for creting quick dynamic components with classes
 */
+
+.comp-shadow {
+  --shadow-color: white;
+  position: absolute;
+}
+
+.dark #aimg-outputs-shadow {
+  --shadow-color: var(--zen-dark-front);
+}
+
+
 .switch {
   position: relative;
   display: inline-block;
@@ -901,7 +926,7 @@ Usefull for creting quick dynamic components with classes
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--ruby-red);
+  background: #a37f7f;
   border-radius: 28px;
   transition: background 0.4s cubic-bezier(1, -1.25, 0, 2);
 }
@@ -923,7 +948,7 @@ Usefull for creting quick dynamic components with classes
 }
 
 input:checked + .slider {
-  background: var(--blue);
+  background: #447eff;
 }
 
 .dark input:checked + .slider {
