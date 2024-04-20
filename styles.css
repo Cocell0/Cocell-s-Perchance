@@ -1236,7 +1236,7 @@ button {
 }
 
 button:focus-visible {
-  outline: auto ;
+  outline: auto;
 }
 
 button:active {
@@ -1259,6 +1259,18 @@ button:disabled {
 
 .dark button:disabled {
   background: var(--dark-gray-accent-zeno);
+}
+
+button.flat-button {
+  background: transparent;
+}
+
+button.flat-button:active {
+  background: var(--light-gray-accent);
+}
+
+.dark button.flat-button:active {
+  background: var(--dark-gray-accent);
 }
 
 input, select {
@@ -1486,4 +1498,49 @@ dialog[open] {
 
 .dark .zen-ui button:disabled {
   background: transparent;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scale-fade-in {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes scale-fade-out {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+
+  to {
+    opacity: 0;
+    scale: 0;
+  }
 }
